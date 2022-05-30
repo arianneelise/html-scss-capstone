@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+
+  .image-hero {
+    background-image: url("../static/images/mountains.jpg");
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    height: 85vh;
+    width: 100vw;
+    z-index: -1;
+  }
+  // z-index: -2;
+
+  .image-overlay {
+    height: 85vh;
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    top: 0;
+    z-index: -2;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 10vw;
+    color: white;
+    z-index: 1;
+  }
+}
