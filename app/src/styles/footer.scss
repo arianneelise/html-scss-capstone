@@ -1,0 +1,24 @@
+@mixin footer($grid) {
+  grid-row: $grid;
+  background-color: $grey;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 0 12vw;
+  font-size: 12px;
+  font-weight: 200;
+
+  .link {
+    padding: 0 12px;
+  }
+}
+
+.home-footer {
+  @include footer(5);
+}
+
+.blog-footer {
+  height: 10vh;
+  @include footer(8);
+}

@@ -1,0 +1,135 @@
+$pink: #e91e63;
+$grey: #3c4858;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.page-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 10vw;
+  z-index: 1;
+  color: $grey;
+  background-color: white;
+  box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+
+  .logo {
+    font-weight: lighter;
+    font-size: 20px;
+  }
+
+  .navigation {
+    font-weight: 300;
+    font-size: 12px;
+
+    .blog {
+      padding: 0 14px;
+      border-radius: 4px;
+      transition: ease-in-out 0.2s;
+      padding: 18px 12px;
+      text-decoration: none;
+      color: $grey;
+    }
+
+    .home:blog {
+      color: $pink;
+    }
+
+    .current {
+      color: $pink;
+    }
+
+    .more-btn {
+      background-color: $pink;
+      border-radius: 30px;
+      font-size: 12px;
+      padding: 18px 23px;
+      border: none;
+      color: white;
+      margin-left: 5px;
+    }
+  }
+}
+
+.blog-hero {
+  background: rgb(178, 33, 128);
+  background: linear-gradient(
+    90deg,
+    rgba(178, 33, 128, 1) 0%,
+    rgba(233, 30, 99, 1) 100%
+  );
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+  height: 50vh;
+  text-align: center;
+  h1 {
+    color: white;
+    padding-top: 15vh;
+    font-size: 55px;
+    font-weight: 500;
+  }
+}
+
+.blog-content {
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(7, 25vh) 10vh;
+  width: 95vw;
+  top: 52vh;
+  background-color: white;
+  box-shadow: 1px 40px 50px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 0 2.5vw;
+  position: absolute;
+
+  .post {
+    .link-heading {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 2em;
+    }
+  }
+
+  .link {
+    font-size: 12px;
+  }
+
+  .link-purple {
+    color: purple;
+  }
+  .link-green {
+    color: #4caf50;
+  }
+  .link-red {
+    color: #e91e63;
+  }
+
+  p {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 10px;
+    font-weight: 200;
+    line-height: 1.9em;
+  }
+
+  .post-1 {
+    grid-row: 1;
+  }
+  .post-2 {
+    grid-row: 2;
+  }
+  .post-3 {
+    grid-row: 3;
+  }
+  .post-4 {
+    grid-row: 4;
+  }
+}
